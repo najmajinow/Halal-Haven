@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    background-color: #333; /* Dark color */
+    background-color: #f2b5d4; /* Pastel pink for the header */
     color: #ffffff;
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -188,7 +188,7 @@ form button:hover {
 }
 
 footer {
-    background-color: #333; /* Dark color */
+    background-color: #f2b5d4; /* Pastel pink for the footer */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
