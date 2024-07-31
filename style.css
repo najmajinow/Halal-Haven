@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: #d0e7f9; /* Pastel blue */
-    color: #333;
+    background-color: #333; /* Dark color */
+    color: #ffffff;
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -44,14 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #9d9d9d; /* Light gray */
+    color: #cccccc; /* Light gray */
 }
 
 section {
@@ -80,8 +80,7 @@ section {
     font-size: 24px;
     max-width: 600px;
     margin: 0 auto;
-    color:black; /*  set the text color to black/*
-
+    color: #000000; /* Black text */
 }
 
 #menu {
@@ -95,7 +94,45 @@ section {
     color: #b57e8e; /* Pastel rose */
 }
 
+#menu .menu-item {
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff5f0; /* Light pastel beige */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#menu .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#menu .menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#menu h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: #8b5f5f; /* Pastel brown */
+}
+
+#menu p {
+    font-size: 18px;
+    color: #6c757d;
+}
 
 #about {
     background-color: #f5f5f5; /* Light pastel gray */
@@ -112,46 +149,7 @@ section {
 }
 
 form {
-    #menu .menu-item {
-        margin-bottom: 40px;
-        max-width: 600px;
-        margin: 0 auto 40px;
-        padding: 20px;
-        border: 1px solid #e9ecef;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: #fff5f0; /* Light pastel beige */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    #menu .menu-item:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    
-    #menu .menu-item img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
-    
-    #menu h3 {
-        font-size: 28px;
-        margin-bottom: 10px;
-        font-family: 'Playfair Display', serif;
-        color: #8b5f5f; /* Pastel brown */
-    }
-    
-    #menu p {
-        font-size: 18px;
-        color: #6c757d;
-    }
-     max-width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: left;
 }
@@ -190,8 +188,8 @@ form button:hover {
 }
 
 footer {
-    background-color: #d0e7f9; /* Pastel blue */
-    color: #333;
+    background-color: #333; /* Dark color */
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
     position: fixed;
@@ -204,16 +202,7 @@ footer p {
     font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}.scroll-to-top {
+.scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -238,3 +227,64 @@ footer p {
     outline: none;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 80px 10px;
+    }
+
+    #home h2 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+
+    #menu h2, #about h2, #contact h2 {
+        font-size: 28px;
+    }
+
+    #menu h3 {
+        font-size: 24px;
+    }
+
+    #menu p {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 0 10px;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .scroll-to-top {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
