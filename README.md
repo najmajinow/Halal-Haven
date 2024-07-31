@@ -6,3 +6,4 @@
 ![falafel wrap](https://raw.githubusercontent.com/najmajinow/Halal-Haven/main/falafel%20wrap.JPG)
 ![baklava.JPG](https://raw.githubusercontent.com/najmajinow/Halal-Haven/main/baklava.JPG)
 ![rice pudding.JPG](https://raw.githubusercontent.com/najmajinow/Halal-Haven/main/rice%20pudding.JPG)
+![mint lemonade.JPG](https://raw.githubusercontent.com/najmajinow/Halal-Haven/main/mint%20lemonade.JPG)
