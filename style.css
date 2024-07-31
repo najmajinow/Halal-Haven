@@ -95,34 +95,7 @@ section {
     color: #b57e8e; /* Pastel rose */
 }
 
-#menu .menu-item {
-    margin-bottom: 40px;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    padding: 20px;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff5f0; /* Light pastel beige */
-}
 
-#menu .menu-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#menu h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-family: 'Playfair Display', serif;
-    color: #8b5f5f; /* Pastel brown */
-}
-
-#menu p {
-    font-size: 18px;
-    color: #6c757d;
-}
 
 #about {
     background-color: #f5f5f5; /* Light pastel gray */
@@ -139,7 +112,46 @@ section {
 }
 
 form {
-    max-width: 600px;
+    #menu .menu-item {
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        padding: 20px;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff5f0; /* Light pastel beige */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #menu .menu-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    #menu .menu-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    #menu h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family: 'Playfair Display', serif;
+        color: #8b5f5f; /* Pastel brown */
+    }
+    
+    #menu p {
+        font-size: 18px;
+        color: #6c757d;
+    }
+     max-width: 600px;
     margin: 0 auto;
     text-align: left;
 }
