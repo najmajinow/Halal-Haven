@@ -8,13 +8,14 @@ body {
 }
 
 header {
-    background-color: #f2b5d4; /* Pastel pink for the header */
-    color: #ffffff;
-    padding: 10px 0;
+    background-color: #ffffff; /* White header */
+    color: #5a3e36; /* Dark text */
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #e0e0e0; /* Light gray border for definition */
 }
 
 nav {
@@ -44,14 +45,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #5a3e36; /* Dark text */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #cccccc; /* Light gray */
+    color: #333333; /* Darker gray */
 }
 
 section {
@@ -188,13 +189,14 @@ form button:hover {
 }
 
 footer {
-    background-color: #f2b5d4; /* Pastel pink for the footer */
-    color: #ffffff;
+    background-color: #ffffff; /* White footer */
+    color: #5a3e36; /* Dark text */
     text-align: center;
     padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    border-top: 1px solid #e0e0e0; /* Light gray border for definition */
 }
 
 footer p {
