@@ -1,18 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
+document.addEventListener('DOMContentLoaded', function() {
+    let lastScrollTop = 0; // Store the last scroll position
+    const header = document.querySelector('header'); // Select the header element
 
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 100) {
-            scrollToTopButton.style.display = 'block';
+    window.addEventListener('scroll', function() {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScrollTop > lastScrollTop) {
+            // Scrolling down
+            header.classList.add('hidden');
         } else {
-            scrollToTopButton.style.display = 'none';
+            // Scrolling up
+            header.classList.remove('hidden');
         }
-    });
-
-    scrollToTopButton.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
     });
 });
